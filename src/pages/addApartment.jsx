@@ -1,3 +1,7 @@
-function AddBeerPage() {}
+import React from 'react'
 
-export default AddBeerPage;
+export const addApartment = () => {
+  return (
+    <div>addApartment</div>
+  )
+}
