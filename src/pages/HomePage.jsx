@@ -14,12 +14,15 @@ export const HomePage = () => {
         setApartments(response.data);
       });
   }, []);
+
   return (
     <>
       {apartments.map((eachApartment) => {
         return(
           <div key={eachApartment._id}>
-        <p>{eachApartment.title}</p>
+            <img src={eachApartment.img} alt="ap img"/>
+        <h1>{eachApartment.title}</h1>
+        <p>{eachApartment.pricePerDay}</p>
         </div>)
       })}
     </>
